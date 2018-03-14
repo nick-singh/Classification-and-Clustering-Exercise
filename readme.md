@@ -1,4 +1,4 @@
-# Comp6490 Assignment 3
+# Comp6940 Assignment 3
 
 ##### Date Due: Friday 30th March, 11:59pm
 
