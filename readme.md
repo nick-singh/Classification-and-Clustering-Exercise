@@ -94,7 +94,7 @@ Students should submit either the following:
 or
 * A python script file with the assignments and appropriate comments 
 
-###### Email submissions to: nchamansingh@gmail.com with the following subject format: < StudentID > COMP6940 Assignment 2
+###### Email submissions to: nchamansingh@gmail.com with the following subject format: < StudentID > COMP6940 Assignment 3
 
 
 #### Late Submissions:
