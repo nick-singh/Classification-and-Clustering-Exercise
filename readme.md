@@ -8,7 +8,7 @@
 
 ### Q1 Cleaning Data (20 marks)
 
-You will use the [UCI Credit Approval Dataset](https://archive.ics.uci.edu/ml/datasets/Credit+Approval) where each record is a credit card application. All attribute names and values have been changed to meaningless symbols to maintain confidentiality. The dataset has been cleaned to remove missing attributes. The data is stored in a comma-separated file (csv) here. Each line describes an instance using 16 columns: the first 15 columns represent the attributes of the application, and the last column is the ground truth label for credit card approval. Note: The last column should not be treated as an attribute.
+You will use the [UCI Credit Approval Dataset](https://archive.ics.uci.edu/ml/datasets/Credit+Approval) where each record is a credit card application. All attribute names and values have been changed to meaningless symbols to maintain confidentiality. The dataset has been cleaned to remove missing attributes. The data is stored in a comma-separated file (csv) [here](https://github.com/nick-singh/Classification-and-Clustering-Exercise/tree/master/data). Each line describes an instance using 16 columns: the first 15 columns represent the attributes of the application, and the last column is the ground truth label for credit card approval. Note: The last column should not be treated as an attribute.
 
 **Required**
 1. Clean the dataset and do any type conversions necessary
@@ -38,10 +38,6 @@ In random forests, it is not necessary to perform explicit cross-validation or u
 Each tree in the forest is constructed using a different bootstrap sample from the original data. Each bootstrap sample is constructed by randomly sampling from the original dataset with replacement (usually, a bootstrap sample has the same size as the original dataset). Statistically, about one-third of the cases are left out of the bootstrap sample and not used in the construction of the kth tree. For each record left out in the construction of the kth tree, it can be assigned a class by the kth tree. As a result,
 each record will have a “test set” classification by the subset of trees that treat the record as an out-of-bag sample. The majority vote for that record will be its predicted class. The proportion of times that a predicted class is not equal to the true class of a record averaged over all records is the OOB error estimate.
 
-#### Resources:
-1. [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
-2. [Tuning the parameters of your Random Forest model](https://www.analyticsvidhya.com/blog/2015/06/tuning-random-forest-model/)
-
 **Required**
 
 **Part 1:**  Using the RandomForest Classifier provided by the sklearn library 
@@ -52,7 +48,7 @@ each record will have a “test set” classification by the subset of trees tha
 
 **Part 2:** Using the RandomizedSearchCV module provided by the sklearn library 
 
-1. Do parameter tuning to obtain the optimal parameters to initialize the RandomForest Classifier. The parameters to tune are as follow (hint consult the resources provided):
+1. Do parameter tuning to obtain the optimal parameters to initialize the RandomForest Classifier. The parameters to tune are as follow:
 	1. n_estimators
 	2. max_features
 	3. max_depth
@@ -69,9 +65,6 @@ each record will have a “test set” classification by the subset of trees tha
 
 You will perform binary classification on the dataset to determine if a credit card application is safe to
 approve or not.
-
-#### Resources:
-1. [A Complete Guide to K-Nearest-Neighbors with Applications in Python ](https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/)
 
 **Required**
 
